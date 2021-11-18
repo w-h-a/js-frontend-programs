@@ -1,0 +1,19 @@
+[{
+  "url": "https://programming-elm.com/1.jpg",
+  "caption": "Surfing",
+  "created_at": "3/31/15",
+  "liked": true,
+  "id": 1
+}, {
+  "url": "https://programming-elm.com/2.jpg",
+  "caption": "The Fox",
+  "created_at": "4/1/15",
+  "liked": false,
+  "id": 2
+}, {
+  "url": "https://programming-elm.com/3.jpg",
+  "caption": "Evening",
+  "created_at": "4/1/15",
+  "liked": true,
+  "id": 3
+}]

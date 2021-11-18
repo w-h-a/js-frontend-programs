@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Booking Form</title>
+  </head>
+  <body>
+    <div id="app">
+
+      <form id="bookingForm" method="POST" action="/api/bookings">
+
+        <div class="banner">
+          <h1>Booking Form</h1>
+        </div>
+
+        <div id="schedules" class="item">
+          <p>Select Schedule</p>
+
+        </div>
+
+        <div class="item">
+          <p>Student Email</p>
+          <input id="studentEmail" type="email" required/>
+        </div>
+
+        <div class="btn-block">
+          <button id="bookBtn" type="submit">SUBMIT</button>
+        </div>
+
+      </form>
+
+    </div>
+
+    <script src="./Browser.js"></script>
+    <script src="./Html.js"></script>
+    <script src="./JSON.js"></script>
+    <script src="./index.js"></script>
+    <script src="./app.js"></script>
+    <script>
+      mount (init, update, view, events);
+    </script>
+
+  </body>
+</html>

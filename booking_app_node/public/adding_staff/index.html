@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Staff</title>
+  </head>
+  <body>
+    <div id="app">
+      <form method="post" action="/api/staff_members">
+        <div class="item">
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name"/>
+        </div>
+        <div class="item">
+          <label for="email">Email Address</label>
+          <input id="email" type="email" name="email"/>
+        </div>
+        <div class="btn-block">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="./index.js"></script>
+    <script src="./app.js"></script>
+    <script>
+        mount (init, update, view, events);
+    </script>
+  </body>
+</html>

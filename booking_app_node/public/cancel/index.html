@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cancellations</title>
+</head>
+<body>
+    <div id="app">
+      <h1>Cancellations</h1>
+      <form id="schedule-form" action="/api/schedules/">
+        <h2>Cancel a Schedule</h2>
+        <input type="submit">
+      </form>
+      <form id="booking-form" action="/api/bookings/">
+        <h2>Cancel a Booking</h2>
+        <input type="submit">
+      </form>
+    </div>
+
+    <script src="./Html.js"></script>
+    <script src="./index.js"></script>
+    <script src="./app.js"></script>
+    <script>
+        mount (init, update, view, events);
+    </script>
+</body>
+</html>

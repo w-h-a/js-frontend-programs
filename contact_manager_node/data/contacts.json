@@ -1,0 +1,16 @@
+[
+  {
+    "full_name": "Victor",
+    "phone_number": "1234567890",
+    "email": "v@example.com",
+    "tags": "work,friend",
+    "id": 1
+  },
+  {
+    "full_name": "Pete Hanson",
+    "phone_number": "1111111111",
+    "email": "p@example.com",
+    "tags": "friend",
+    "id": 2
+  }
+]

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Groceries</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="stylesheets/groceries.css" />
+  </head>
+  <body>
+    <main id="groceries">
+      <form action="" method="post">
+        <h2>Add an item</h2>
+        <fieldset>
+          <label for="name">Item name</label>
+          <input type="text" name="name" id="name" required />
+          <label for="quantity">Quantity</label>
+          <input type="text" name="quantity" id="quantity" />
+          <input type="submit" value="Add" />
+        </fieldset>
+      </form>
+      <h1>Groceries</h1>
+      <ul id="grocery-list"></ul>
+    </main>
+
+    <script src="javascripts/Html.js"></script>
+    <script src="javascripts/index.js"></script>
+    <script src="javascripts/groceries.js"></script>
+    <script>
+      mount (model, update, view, events);
+    </script>
+    <script>
+      if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+      }
+    </script>
+  </body>
+</html>

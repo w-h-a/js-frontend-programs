@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Car Shop</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            header {
+                background-color: goldenrod;
+                color: white;
+                padding: 20px;
+            }
+
+            form {
+                margin-top: 10px;
+            }
+
+            fieldset {
+                border: none;
+            }
+
+            select, button {
+                background-color: goldenrod;
+                border: 1px solid white;
+                border-raidus: 5px;
+                color: white;
+                margin-right: 10px;
+                padding: 5px;
+                width: 80px;
+            }
+
+            #submit {
+                margin-left: 20px;
+                width: 60px;
+            }
+
+            .car {
+                display: inline-block;
+                margin: 10px;
+            }
+
+            .car img {
+                width: 200px;
+                height: auto;
+            }
+
+            .car p {
+                margin-bottom: 5px;
+            }
+
+            .buy {
+                width: 50px;
+            }
+
+            .buy:hover {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="app">
+            <header>
+                <h1>Buy Used Cars</h1>
+                <form id="filters">
+                    <fieldset>
+                        <label for="make">Make</label>
+                        <select name="make" id="make">
+                            <option value="all">All</option>
+                        </select>
+                        <label for="model">Model</label>
+                        <select name="model" id="model">
+                            <option value="all">All</option>
+                        </select>
+                        <label for="price">Price</label>
+                        <select name="price" id="price">
+                            <option value="any">Any</option>
+                        </select>
+                        <label for="year">Year</label>
+                        <select name="year" id="year">
+                            <option value="any">Any</option>
+                        </select>
+                        <button type="submit" id="submit">Filter</button>
+                    </fieldset>
+                </form>
+            </header>
+            <main>
+
+            </main>
+        </div>
+
+        <script src="./Html.js"></script>
+        <script src="./index.js"></script>
+        <script src="./app.js"></script>
+        <script>
+            mount (model, update, view, events);
+        </script>
+    </body>
+</html>

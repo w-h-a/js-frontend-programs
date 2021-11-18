@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+   <head>
+       <meta charset="utf-8">
+       <title>Form</title>
+       <style>
+           body {
+               background-color: mediumseagreen;
+           }
+           h1 {
+               color: white;
+           }
+           main {
+               background-color: white;
+               border-radius: 10px;
+               margin: 30px;
+               overflow: auto;
+           }
+           div {
+               margin: 20px;
+           }
+           label {
+               display: block;
+           }
+           input {
+               display: inline-block;
+           }
+           input[name="credit_card"] {
+               width: 40px;
+           }
+           button {
+               margin: 10px 20px;
+               background-color: mediumseagreen;
+               border: none;
+               border-radius: 10px;
+               color: white;
+               font-weight: bold;
+               height: 50px;
+               width: 100px;
+           }
+           #message {
+               color: red;
+               margin-left: 20px;
+           }
+           p {
+               display: inline-block;
+               margin: 0 5px;
+           }
+           p.error {
+               margin-left: 50px;
+               color: red;
+           }
+           #serialized-form {
+               background-color: dodgerblue;
+               color: white;
+               overflow: auto;
+           }
+       </style>
+   </head>
+   <body>
+       <div id="app">
+           <h1>Sign Up Form</h1>
+           <main>
+               <form id="signup" novalidate>
+                   <div class="first-name">
+                       <label for="first-name">First Name:</label>
+                       <input type="text" name="first_name" id="first-name" required>
+                       <p class="error"></p>
+                   </div>
+                   <div class="last-name">
+                       <label for="last-name">Last Name:</label>
+                       <input type="text" name="last_name" id="last-name" required>
+                       <p class="error"></p>
+                   </div>
+                   <div class="email">
+                       <label for="email">Email:</label>
+                       <input type="email" name="email" id="email" required pattern=".+@.+">
+                       <p class="error"></p>
+                   </div>
+                   <div class="password">
+                       <label for="password">Password:</label>
+                       <input type="password" name="password" id="password" required minlength="10">
+                       <p class="error"></p>
+                   </div>
+                   <div class="phone">
+                       <label for="phone">Phone:</label>
+                       <input type="tel" name="phone" id="phone" placeholder="xxxxxxxxxx" pattern="\d{10}">
+                       <p class="error"></p>
+                   </div>
+                   <div class="credit-card">
+                       <label for="credit-card">Credit Card:</label>
+                       <input type="text" name="credit_card" maxlength="4" pattern="\d+">
+                       <p>-</p>
+                       <input type="text" name="credit_card" maxlength="4" pattern="\d+">
+                       <p>-</p>
+                       <input type="text" name="credit_card" maxlength="4" pattern="\d+">
+                       <p>-</p>
+                       <input type="text" name="credit_card" maxlength="4" pattern="\d+">
+                       <p class="error"></p>
+                   </div>
+                   <button form="signup" type="submit" id="submit">Sign Up</button>
+               </form>
+               <div id=serialized-form>
+                   <h2>Serialized Form</h2>
+               </div>
+           </main>
+       </div>
+
+       <script src="./Html.js"></script>
+       <script src="./index.js"></script>
+       <script src="./app.js"></script>
+       <script>
+           mount (init, update, view, events);
+       </script>
+   </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Rich Text Editor</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: royalblue;
+        color: white;
+        text-align: center;
+      }
+
+      main {
+        color: black;
+        height: 500px;
+        width: 700px;
+        margin: 0 auto;
+        text-align: left;
+      }
+
+      #controls {
+        background-color: lightgray;
+        height: 30px;
+      }
+
+      button {
+        background-color: lightgray;
+        border: none;
+        border-radius: 5px;
+      }
+
+      button:hover {
+        background-color: white;
+        cursor: pointer;
+      }
+
+      button.active {
+        background-color: white;
+      }
+
+      i {
+        margin: 5px;
+      }
+
+      #text {
+        background-color: white;
+        height: 470px;
+        padding: 5px;
+      }
+    </style>
+    <script src="https://kit.fontawesome.com/5b5b108d53.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      <div id="app">
+        <header>
+          <h1>Rich Text Editor</h1>
+        </header>
+        <main>
+          <div id='editor'>
+            <div id='controls'>
+              <button><i class="fas fa-bold" data-command='bold'></i></button>
+              <button><i class="fas fa-italic" data-command='italic'></i></button>
+              <button><i class="fas fa-underline" data-command='underline'></i></button>
+              <button><i class="fas fa-strikethrough" data-command='strikeThrough'></i></button>
+              <button><i class="fas fa-link" data-command='createLink'></i></button>
+              <button><i class="fas fa-list" data-command='insertUnorderedList'></i></button>
+              <button><i class="fas fa-list-ol" data-command='insertOrderedList'></i></button>
+              <button><i class="fas fa-align-left" data-command='justifyLeft'></i></button>
+              <button><i class="fas fa-align-right" data-command='justifyRight'></i></button>
+              <button><i class="fas fa-align-center" data-command='justifyCenter'></i></button>
+              <button><i class="fas fa-align-justify" data-command='justifyFull'></i></button>
+            </div>
+            <div id='text' contenteditable="true"></div>
+          </div>
+        </main>
+      </div>
+
+      <script src="./index.js"></script>
+      <script src="./app.js"></script>
+      <script>
+          mount (model, update, view, events);
+      </script>
+  </body>
+</html>

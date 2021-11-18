@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Guess-a-word</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="stylesheets/game.css" />
+  </head>
+  <body>
+    <main>
+      <div id="tree">
+          <div id="apples"></div>
+      </div>
+
+      <p id="message">
+
+      </p>
+
+      <p>
+          <a id="replay" class="visible" href="#">Start Again</a>
+      </p>
+
+      <div id="spaces">
+          <h2>Word:</h2>
+      </div>
+
+      <div id="guesses">
+          <h2>Available:</h2>
+      </div>
+    </main>
+
+    <script src="javascripts/Random.js"></script>
+    <script src="javascripts/Html.js"></script>
+    <script src="javascripts/index.js"></script>
+    <script src="javascripts/game.js"></script>
+    <script>
+        mount (init, update, view, events);
+    </script>
+  </body>
+</html>

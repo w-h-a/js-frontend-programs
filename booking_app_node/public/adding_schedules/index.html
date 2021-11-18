@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Add Schedules</title>
+    </head>
+    <body>
+        <div id="app">
+            <div class="banner">
+                <h1>Add Schedules</h1>
+            </div>
+
+            <div class="btn-block">
+                <button id="addMoreBtn">ADD SCHEDULE</button>
+            </div>
+
+            <form method="post" action="/api/schedules">
+                <div id="schedules">
+
+                </div>
+
+                <div class="btn-block">
+                    <button id="submitBtn" type="submit">SEND</button>
+                </div>
+            </form>
+
+        </div>
+
+        <script src="./Browser.js"></script>
+        <script src="./Html.js"></script>
+        <script src="./JSON.js"></script>
+        <script src="./index.js"></script>
+        <script src="./app.js"></script>
+        <script>
+            mount (init, update, view, events);
+        </script>
+    </body>
+</html>

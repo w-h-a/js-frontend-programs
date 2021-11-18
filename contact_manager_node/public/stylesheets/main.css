@@ -1,0 +1,44 @@
+#overlay {
+  background-color: black;
+  position: fixed;
+  opacity: 50%;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#modal {
+    background-color: lightgray;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    top: 0px;
+    left: 70px;
+    height: 150px;
+    width: 400px;
+    padding: 20px 10px 5px 10px;
+    position: absolute;
+    z-index: 3;
+}
+
+.confirm {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    top: 30px;
+    left: 200px;
+    height: 30px;
+    width: 70px;
+}
+
+#yes {
+    background-color: red;
+}
+
+#no {
+    background-color: green;
+}

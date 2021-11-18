@@ -1,0 +1,50 @@
+<!doctype html>
+<html en="lang">
+<head>
+    <meta charset="utf-8">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="signup" class="form">
+            <h1>Sign Up</h1>
+
+            <div class="form-field">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" autocomplete="off">
+                <small></small>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" autocomplete="off">
+                <small></small>
+            </div>
+
+            <div class="form-field">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" autocomplete="off">
+                <small></small>
+            </div>
+
+            <div class="form-field">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" name="confirm-password" id="confirm-password" autocomplete="off">
+                <small></small>
+            </div>
+
+            <div class="form-field">
+                <input type="submit" value="Sign Up" class="btn">
+            </div>
+        </form>
+    </div>
+    <script src="js/Forms.js"></script>
+    <script src="js/Debounce.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        mount (model, update, view, events);
+    </script>
+</body>
+</html>
